@@ -19,12 +19,14 @@ DB_PASSWORD = os.environ['DB_PASSWORD']
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
         'NAME': DB_NAME,
+        'ENGINE': 'django.db.backends.mysql',
         'USER': f'{DB_USER}@{DB_HOST}',
         'PASSWORD': DB_PASSWORD,
-        'HOST': f'{DB_HOST}.postgres.database.azure.com',
-        'PORT': '',
+        'HOST': f'{DB_HOST}.mysql.database.azure.com',
+        'OPTIONS': {
+            'autocommit': True,
+        },
     }
 }
 
