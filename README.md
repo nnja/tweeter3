@@ -8,11 +8,11 @@ Tweeter3 is a basic example Django application that uses [Django Rest Framework]
 
 1. Clone the project.
     ```shell
-    $ git clone https://github.com/nnja/connect_python_azure
+    $ git clone https://github.com/nnja/tweeter3
     ```
 1. `cd` intro the project directory
     ```shell
-    $ cd connect_python_azure
+    $ cd tweeter3
     ```
 1. Create a new virtual environment using Python 3.7 and activate it.
     ```shell
@@ -162,7 +162,7 @@ Create two pipelines.
 1. One for CI (Continuous Integration):
     - use the source yaml file: `.azure-ci-pipeline.yml`
     - set the environment variables to use for tests:
-        - DJANGO_SETTINGS_MODULE=connect_python_azure.settings.development
+        - DJANGO_SETTINGS_MODULE=tweeter3.settings.development
 
 1. One for CD (Continuous Deployment):
     - use the source yaml file: `.azure-deploy-pipeline.yml`
